@@ -1,0 +1,82 @@
+.novidades{
+   background-color: var(--branco);
+   display: flex;
+   flex-direction: column;
+   gap:1rem;
+   padding: 1rem 2.3rem;
+}
+
+.novidades__titulo,
+.novidades__texto{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.8rem;
+    font-weight: 500;
+    
+}
+
+.novidades__texto{
+    font-weight: 300;
+}
+
+.cadastro__email{
+    border: 1px solid var(--azul-escuro);
+    border-radius: 2.4rem;
+    width: 100%;
+    padding: 1rem 2.4rem;
+    margin-top: 1rem;
+    color: var(--azul-escuro);
+}
+
+.cadastro__email::placeholder{
+    font-family: var(--fonte-principal);
+    text-align: center;
+    padding-right: 6rem;
+    background: url("/assets/Email.svg");
+    background-repeat: no-repeat;
+    background-position: 1%;
+    color: var(--azul-escuro);
+    
+}
+
+@media screen and (min-width:1024px){
+
+    .novidades{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+         margin: 1rem 2rem 3rem 2rem ;
+    }
+
+    .novidades__container{
+        width: 50%;
+        
+    }
+
+    .cadastro__email{
+      width: 40%;
+    }
+
+    .cadastro__email::placeholder{
+        font-size: 1.6rem;
+        padding-left: 5rem;
+    }
+
+    
+    .novidades__titulo{
+        font-size: 2.4rem;
+    }
+
+    .novidades__texto{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:1728px){
+    .novidades{
+        padding: 2rem 20vw;
+    }
+}
